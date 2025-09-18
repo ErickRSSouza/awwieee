@@ -1,5 +1,5 @@
 // Data fixa (não pode ser alterada na interface)
-const dataFixa = new Date("2025-09-09T07:15:00"); // exemplo
+const dataFixa = new Date("2025-09-08T06:06:00"); // exemplo
 
 // Função para singular/plural
 function pluralize(value, singular, plural) {
@@ -29,3 +29,4 @@ function atualizarContador() {
 
 // Inicia o contador
 setInterval(atualizarContador, 1000);
+
