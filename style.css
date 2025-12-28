@@ -1,0 +1,66 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #ffe6f0; 
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #b30059;
+}
+
+#contador { 
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    text-align: center;
+    color: #660033;
+}
+
+#frase-romantica {
+    font-size: 20px;
+    color: #b30059; 
+    margin-bottom: 20px; 
+    text-align: center;
+    font-style: italic;
+}
+
+#fotos-container {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-box {
+    width: 300px; 
+    height: 300px; 
+    border: 6px solid #b30059; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    background-color: white;
+    overflow: hidden; 
+}
+
+.foto-padrao { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+/* --- AJUSTE DE ZOOM E POSIÇÃO --- */
+#foto-bae {
+    /* Mantém o zoom que você queria */
+    transform: scale(2.5); 
+    
+    /* Eixo X: 50% (Centro horizontal)
+       Eixo Y: 85% (Fundo - onde provavelmente está o rosto)
+    */
+    transform-origin: 60% 80%;
+}
+}
